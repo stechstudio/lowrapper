@@ -41,12 +41,12 @@ More [examples](/examples)
 
 ```bash
 sudo add-apt-repository ppa:libreoffice/ppa
-sudo apt-get update
-sudo apt-get install default-jdk -y
-sudo apt-get install python-software-properties  -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install libreoffice-core --no-install-recommends
-sudo apt-get install libreoffice-writer
+sudo apt update
+sudo apt install python-software-properties  -y
+sudo apt install software-properties-common -y
+sudo apt install openjdk-21-jdk-headless -y
+sudo apt install libreoffice-core-nogui libreoffice-java-common liblibreoffice-java --no-install-recommends -y
+sudo apt install libreoffice-writer-nogui libreoffice-impress-nogui libreoffice-calc-nogui libreoffice-draw-nogui --no-install-recommends -y
 composer require mnvx/lowrapper
 ```
 
